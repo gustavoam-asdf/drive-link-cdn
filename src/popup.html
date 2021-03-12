@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="shortcut icon" href="./img/cdn.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+</head>
+<body>
+  
+  <main>
+    <form>
+      <div class="form-group">
+        <label for="driveLink">Google Drive link:</label>
+        <input type="text" name="driveLink" id="driveLink" autocomplete="off">
+        <span class="info">*Ideally link should be public so that anyone can read it</span>
+        <span class="error"><span class="jam jam-alert"></span>Invalid link</span>
+        <span class="correct"><span class="jam jam-chevron-circle-down"></span>Copied</span>
+      </div>
+      
+      <div class="form-group">
+        <label for="cdnLink">CDN link:</label>
+        <input type="text" name="cdnLink" id="cdnLink" readonly>
+      </div>
+
+      <input type="button" value="Copiar" id="copy" disabled>
+    </form>
+  </main>
+
+  <script src="./js/index.js"></script>
+
+</body>
+</html>
