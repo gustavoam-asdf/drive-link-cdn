@@ -1,0 +1,14 @@
+{
+  "manifest_version" : 2,
+  "name" : "Drive CDN",
+  "description" : "Drive as a CDN",
+  "version" : "1.0",
+  "icons" : {
+    "128" : "src/img/cdn.png"
+  },
+  "browser_action": {
+    "default_icon"  : "src/img/cdn.png",
+    "default_popup" : "src/popup.html",
+    "default_title" : "Drive CDN"
+  }
+}
