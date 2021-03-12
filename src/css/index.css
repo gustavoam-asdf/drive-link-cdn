@@ -1,0 +1,106 @@
+@import 'https://necolas.github.io/normalize.css/latest/normalize.css';
+
+:root {
+  --light-blue: #379ece;
+  --turquoise : #6EB6D8;
+  --blue      : #435cc9;
+  --dark-blue : #0d0650;
+  --black     : #202020;
+  --white     : #ffffff;
+  --grey      : #dbdbdb;
+  --red       : #ce1e1e;
+  --green     : #48ff51;
+}
+
+form {
+  padding: 2em;
+  background-color: var(--light-blue);
+  width: min-content;
+  user-select: none;
+  font-family: sans-serif;
+}
+
+input{
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 0;
+  outline: none;
+  font-size: 1.3em;
+}
+
+.form-group {
+  margin: 0 0 1em 0;
+}
+
+.form-group > label {
+  display: block;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: .5em;
+  color: var(--white);
+}
+
+.form-group > input {
+  display: block;
+  padding: .35em .5em;
+  width: 45em;
+}
+
+.form-group > input:read-only {
+  background-color: var(--turquoise);
+}
+
+.form-group:first-child {
+  position: relative;
+}
+
+.info {
+  display: block;
+  color: var(--grey);
+  font-size: 1.1em;
+  margin: .3em 0 0 1em;
+}
+
+.error, .correct {
+  position: absolute;
+  top: -.1em;
+  right: 0;
+  font-size: 1.4em;
+  font-weight: bold;
+  display: none;
+}
+
+.error {
+  color: var(--red);
+}
+
+.correct {
+  color: var(--green);
+}
+
+.show {
+  display: block;
+}
+
+#copy {
+  margin-top: .5em;
+  width: 100%;
+  padding: .5em;
+  color: var(--white);
+  font-weight: bold;
+  background-color: var(--blue);
+  border: 2px solid var(--white);
+  cursor: pointer;
+}
+
+#copy:disabled {
+  background-color: var(--black);
+}
+
+#copy:hover {
+  background-color: var(--dark-blue);
+}
+
+#copy:disabled:hover {
+  background-color: var(--black);
+}
